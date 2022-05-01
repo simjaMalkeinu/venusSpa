@@ -64,80 +64,12 @@
     </header>
 
     <div class="container">
-        <h1 class="titulo-log">PRODUCTOS</h1>
-        <div class="productos">
-            <div class="producto">
-                <img src="./public/BABA.jpg">
-                <div class="prod-info">
-                    <p>CREMA CORPOTAL DE BABA DE CARACOL</p>
-                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$289.89</span></label>
-                    <button class="btn-agendar" onclick="addCartShop(1)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./public/jabon cafe.jpg">
-                <div class="prod-info">
-                    <p>JABON CORPORAL EXFOLIANTE CAFÉ Y AVENA</p>
-                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$89.90</span></label>
-                    <button class="btn-agendar" onclick="addCartShop(2)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./public/coco.jpg">
-                <div class="prod-info">
-                    <p>JABON CORPORAL RELAJANTE DE COCOL</p>
-                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$89.90</span></label>
-                    <button class="btn-agendar" onclick="addCartShop(3)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./public/jabo avena.jpg">
-                <div class="prod-info">
-                    <p>JABON CORPORAL CICATRIZANTE DE AVENA Y MANZANILLA</p>
-                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$89.89</span></label>
-                    <button class="btn-agendar" onclick="addCartShop(4)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./public/jabonavenamiel.jpg">
-                <div class="prod-info">
-                    <p>JABON CORPORAL HIDRATANTE DE AVENA CON MIEL</p>
-                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$89.89</span></label>
-                    <button class="btn-agendar" onclick="addCartShop(5)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./public/exfo lavanda.jpg">
-                <div class="prod-info">
-                    <p>EXFOLIANTE RELAJANTE DE LAVANDA</p>
-                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$89.89</span></label>
-                    <button class="btn-agendar" onclick="addCartShop(6)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./public/jabon rosas.jpg">
-                <div class="prod-info">
-                    <p>JABON FACIAL HIDRATANTE Y ANTIEDAD COLAGENO, ROSA DE CASTILLA Y AVENA</p>
-                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$99.89</span></label>
-                    <button class="btn-agendar" onclick="addCartShop(7)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
-                </div>
-            </div>
-
-            <div class="producto">
-                <img src="./public/exfo frutos.jpg">
-                <div class="prod-info">
-                    <p>EXFOLIANTE RELAJANTE DE FRUTOS ROJO</p>
-                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$89.89</span></label>
-                    <button class="btn-agendar" onclick="addCartShop(8)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
-                </div>
-            </div>
+        <h1 class="titulo-log">Carrito de Compras</h1>
+        <div class="carrito" id="carrito">
+            <h2 style="margin-bottom: 1em;">Aun no agregas nada a tu carrito<h2></h2>
         </div>
+
+        <button class="btn" onclick="pagar()">PAGAR</button>
     </div>
 
     <footer>
@@ -153,6 +85,9 @@
     </footer>
 
     <script src="./js/user.js"></script>
+    <script>
+        llenarCarrito();
+    </script>
 
 </body>
 

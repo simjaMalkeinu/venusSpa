@@ -80,6 +80,25 @@ const validate = () => {
 
 }
 
+const llenarCarrito = () => {
+    var carrito = JSON.parse(localStorage.getItem('carrito'));
+
+    const cart = document.getElementById("carrito");
+    carrito.forEach(item => {
+        cart.innerHTML += `<div class="cart-item">
+                                <p>${item.nombre}</p>
+                                <label><i class="fa-solid fa-money-check-dollar"></i><span>$${item.precio}</span></label>
+                            </div>`;
+    });
+}
+
+const pagar = () => {
+    const array = [];
+    localStorage.setItem('carrito', JSON.stringify(array));
+    const cart = document.getElementById("carrito");
+    cart.innerHTML = "<h2>Aun no agregas nada a tu carrito<h2>";
+}
+
 validate();
 
 if (localStorage.getItem('carrito') === null) {
