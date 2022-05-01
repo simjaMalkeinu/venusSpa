@@ -1,0 +1,230 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-color: #FEE5FB;
+}
+
+header{
+    padding: 0 2em;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-size: 60px;
+    color: #286380;
+    font-weight: 600;
+}
+
+.menu{
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.menu2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.boton-modal{
+    display: none;
+}
+
+.boton-modal label{
+    padding: 10px 15px;
+    background-color: #633C5F;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal label:hover{
+    background-color: #185E83;
+}
+/*:::Fin Boton-Modal:::*/
+
+/*:::Ventana Modal:::*/
+#btn-modal{
+    display: none;
+}
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color: #5488a3;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content-modal .btn-cerrar label:hover{
+    background-color:#185E83;
+}
+
+.cerrar-modal{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+@media screen and (max-width:800px) {
+    .content-modal{
+        width: 90%;
+    }
+}
+/*:::Fin Ventana Modal:::*/
+
+
+.iteam{
+    transition: all ease 0.5s;
+}
+
+.iteam:hover a{
+    color: #286380;
+}
+
+.iteam a{
+    color: #633C5F;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.inicio{
+    display: flex;
+    position: relative;
+}
+
+.card{
+    width: 700px;
+    height: 535px;
+    background: rgba(99, 60, 95, 0.5);
+    box-shadow: 0px 5.46718px 16.4015px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16.4015px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 41.0039px;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 538px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.content h1{
+    font-size: 60px;
+}
+
+.content p{
+    font-size: 30px;
+}
+
+.content a{
+    color: white;
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+.inicio img{
+    position: absolute;
+    right: -5%;
+    bottom: -15%;
+}
+
+footer{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6em;
+}
+
+.footer-item{
+    display: flex;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.name{
+
+    font-size: 25px;
+    background: none;
+    border: none;
+}
+#usuario{
+    position: relative;
+}
+
+#usuario ul{
+    display: none;
+    position: absolute;
+}
+
+#usuario ul button{
+    background: #E88BDD;
+    border-radius: 13.6326px;
+    border: none;
+    cursor: pointer;
+
+    color: white;
+
+    padding: 10px;
+    
+}
+
+#usuario:hover ul{
+    display: block;
+}

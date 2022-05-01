@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+
+    <!-- FONT AWEASOME -->
+    <script src="https://kit.fontawesome.com/fd8ab87d68.js" crossorigin="anonymous"></script>
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/productos.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="./public/logoPng.png" alt="logo" width="130">
+            </a>
+
+            <a href="/" class="title">Venus Spa</a>
+
+            <ul class="menu" id="menu">
+                <li class="iteam"><a href="./servicios.html">Servicios</a></li>
+                <li class="iteam"><a href="./productos.html">Productos</a></li>
+                <li class="iteam" id="login"><a href="./iniciarSecion.html">Iniciar Sesion</a></li>
+                <li class="iteam"><a href="./comentarios.html"><i class="fa-solid fa-comments"></i></a></li>
+                <li class="iteam"><a href="./carritoCompras.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+
+            <!--Boton-->
+            <div class="boton-modal">
+                <label for="btn-modal">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+            <!--Fin de Boton-->
+            <!--Ventana Modal-->
+            <input type="checkbox" id="btn-modal">
+            <div class="container-modal">
+                <div class="content-modal">
+                    <ul class="menu2">
+                        <li class="iteam"><a href="./servicios.html">Servicios</a></li>
+                        <li class="iteam"><a href="./productos.html">Productos</a></li>
+                        <li class="iteam"><a href="./iniciarSecion.html">Iniciar Sesion</a></li>
+                        <li class="iteam"><a href="./comentarios.html"><i class="fa-solid fa-comments"></i></a></li>
+                        <li class="iteam"><a href="./carritoCompras.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <label for="btn-modal" class="cerrar-modal"></label>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="titulo-log">PRODUCTOS</h1>
+        <div class="productos">
+            <div class="producto">
+                <img src="./public/BABA.jpg">
+                <div class="prod-info">
+                    <p>CREMA CORPOTAL DE BABA DE CARACOL</p>
+                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$289.89</span></label>
+                    <button class="btn-agendar" onclick="addCartShop(1)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="./public/jabon cafe.jpg">
+                <div class="prod-info">
+                    <p>JABON CORPORAL EXFOLIANTE CAFÉ Y AVENA</p>
+                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$89.90</span></label>
+                    <button class="btn-agendar" onclick="addCartShop(2)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="./public/coco.jpg">
+                <div class="prod-info">
+                    <p>JABON CORPORAL RELAJANTE DE COCOL</p>
+                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$89.90</span></label>
+                    <button class="btn-agendar" onclick="addCartShop(3)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="./public/jabo avena.jpg">
+                <div class="prod-info">
+                    <p>JABON CORPORAL CICATRIZANTE DE AVENA Y MANZANILLA</p>
+                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$89.89</span></label>
+                    <button class="btn-agendar" onclick="addCartShop(4)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="./public/jabonavenamiel.jpg">
+                <div class="prod-info">
+                    <p>JABON CORPORAL HIDRATANTE DE AVENA CON MIEL</p>
+                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$89.89</span></label>
+                    <button class="btn-agendar" onclick="addCartShop(5)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="./public/exfo lavanda.jpg">
+                <div class="prod-info">
+                    <p>EXFOLIANTE RELAJANTE DE LAVANDA</p>
+                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$89.89</span></label>
+                    <button class="btn-agendar" onclick="addCartShop(6)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="./public/jabon rosas.jpg">
+                <div class="prod-info">
+                    <p>JABON FACIAL HIDRATANTE Y ANTIEDAD COLAGENO, ROSA DE CASTILLA Y AVENA</p>
+                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$99.89</span></label>
+                    <button class="btn-agendar" onclick="addCartShop(7)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="./public/exfo frutos.jpg">
+                <div class="prod-info">
+                    <p>EXFOLIANTE RELAJANTE DE FRUTOS ROJO</p>
+                    <label><i class="fa-solid fa-money-check-dollar"></i><span>$89.89</span></label>
+                    <button class="btn-agendar" onclick="addCartShop(8)"><i class="fa-solid fa-calendar"></i> Agendar cita</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-item">
+            <i class="fa-solid fa-map"></i>
+            <p>Av. Té 950, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX</p>
+        </div>
+        <div class="footer-item">
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-message"></i>
+            <p>55 5624 2000</p>
+        </div>
+    </footer>
+
+    <script src="./js/user.js"></script>
+
+</body>
+
+</html>

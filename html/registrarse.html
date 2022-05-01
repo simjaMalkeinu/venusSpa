@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrase</title>
+
+    <!-- FONT AWEASOME -->
+    <script src="https://kit.fontawesome.com/fd8ab87d68.js" crossorigin="anonymous"></script>
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Personal CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/loging.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <img src="./public/logoPng.png" alt="logo" width="130">
+            </a>
+
+            <a href="/" class="title">Venus Spa</a>
+
+            <ul class="menu" id="menu">
+                <li class="iteam"><a href="./servicios.html">Servicios</a></li>
+                <li class="iteam"><a href="./productos.html">Productos</a></li>
+                <li class="iteam" id="login"><a href="./iniciarSecion.html">Iniciar Sesion</a></li>
+                <li class="iteam"><a href="./comentarios.html"><i class="fa-solid fa-comments"></i></a></li>
+                <li class="iteam"><a href="./carritoCompras.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+            </ul>
+
+            <!--Boton-->
+            <div class="boton-modal">
+                <label for="btn-modal">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+            <!--Fin de Boton-->
+            <!--Ventana Modal-->
+            <input type="checkbox" id="btn-modal">
+            <div class="container-modal">
+                <div class="content-modal">
+                    <ul class="menu2">
+                        <li class="iteam"><a href="./servicios.html">Servicios</a></li>
+                        <li class="iteam"><a href="./productos.html">Productos</a></li>
+                        <li class="iteam"><a href="./iniciarSecion.html">Iniciar Sesion</a></li>
+                        <li class="iteam"><a href="./comentarios.html"><i class="fa-solid fa-comments"></i></a></li>
+                        <li class="iteam"><a href="./carritoCompras.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <label for="btn-modal" class="cerrar-modal"></label>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="titulo-log">REGISTRARSE</h1>
+        <form class="card-2 mx-auto" action="./php/registro.php">
+            <label>
+                BOLETA
+                <input type="number" placeholder="No. Boleta" name="id" required>
+            </label>
+            <label>
+                NOMBRE
+                <input type="text" placeholder="Nombre" name="name" required>
+            </label>
+            <label>
+                CORREO
+                <input type="email" placeholder="Correo" name="email" required>
+            </label>
+            <label>
+                SEXO
+                <select name="sexo" required>
+                    <option value="">--</option>
+                    <option value="1">FEMENINO</option>
+                    <option value="2">MASCULINO</option>
+                </select>
+            </label>
+            <label>
+                CONTRASEÑA
+                <input type="password" placeholder="Contraseña" name="pass" required>
+            </label>
+            <label>
+                CONFIRMAR CONTRASEÑA
+                <input type="password" placeholder="Confirma tu contraseña" name="confirm" required>
+            </label>
+
+            <button type="submit" class="mx-auto">Registrarse</button>
+            <span>Ya tienes con una cuenta, <a href="./iniciarSecion.html">Inicia sesion aqui</a></span>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-item">
+            <i class="fa-solid fa-map"></i>
+            <p>Av. Té 950, Granjas México, Iztacalco, 08400 Ciudad de México, CDMX</p>
+        </div>
+        <div class="footer-item">
+            <i class="fa-solid fa-phone"></i>
+            <i class="fa-solid fa-message"></i>
+            <p>55 5624 2000</p>
+        </div>
+    </footer>
+
+    <script src="./js/user.js"></script>
+
+</body>
+
+</html>
